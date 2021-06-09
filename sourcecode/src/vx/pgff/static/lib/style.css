@@ -1,0 +1,308 @@
+/*
+# Author: Ivar Vargas Belizario
+# Copyright (c) 2020
+# E-mail: ivar@usp.br
+*/
+
+text.icicle { pointer-events: none; }
+
+.options { font-size: 12px; text-align: center; padding: 5px 0; }
+.source { float: right; }
+pre, code { font-family: "Menlo", monospace; }
+
+.html .value,
+.javascript .string,
+.javascript .regexp {
+  color: #dfdcf0;
+}
+
+.html .tag,
+.css .tag,
+.javascript .keyword {
+  color: #3182bd;
+}
+
+.comment {
+  color: #636363;
+}
+
+.html .doctype,
+.javascript .number {
+  color: #31a354;
+}
+
+.html .attribute,
+.css .attribute,
+.javascript .class,
+.javascript .special {
+  color: #e6550d;
+}
+
+/* Specific Style */
+.node {
+  stroke: #fff;
+  stroke-width: 0.75px;
+}
+
+.link {
+  stroke: #999;
+  stroke-opacity: .6;
+}
+
+
+
+selection {
+    stroke: #000;
+    stroke-width: 0;
+    fill: #FFDC00;
+    opacity: 0.65;
+}
+
+
+.input-xs, select.input-xs {
+  height: 45px;
+  line-height: 45px;
+  padding: 1px;
+  vertical-align: middle;
+}
+/**{
+    font-size: 12px; 
+}*/
+*{
+    font-family: Sans-serif;
+    font-size: 12px;
+}
+table{
+    border-spacing:0;    
+    border-collapse: collapse;
+}
+
+.field_set{
+    border: none;
+}
+/*strong, b, ol, li, ul, div, a, body, td, div, span, table, td, p, input, *{
+    font-size: 12px;
+}*/
+
+
+
+
+
+
+
+        .nodex {
+          cursor: pointer;
+        }
+
+        .nodex:hover {
+          stroke: #000;
+          stroke-width: 1.5px;
+        }
+
+        .nodex--leaf {
+          fill: white;
+        }
+
+        .labelx {
+          font: 11px "Helvetica Neue", Helvetica, Arial, sans-serif;
+          text-anchor: middle;
+          text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff, 0 -1px 0 #fff;
+        }
+
+        .labelx,
+        .nodex--root,
+        .nodex--leaf {
+          pointer-events: none;
+        }
+
+
+
+    /* sun brust*/
+    .slice{
+        cursor: pointer;
+        font-family: Sans-serif;
+        font-size: 8px;
+    }
+
+    .slice .main-arc {
+        stroke: #fff;
+        stroke-width: 1px;
+        font-size: 8px;
+    }
+
+    .slice .hidden-arc {
+        fill: none;
+        font-size: 8px;
+    }
+
+    .slice text {
+        pointer-events: none;
+        dominant-baseline: middle;
+        text-anchor: middle;
+        font-size: 8px;
+    }
+
+
+
+
+
+
+
+    .node {
+        font: 300 8px "Helvetica Neue", Helvetica, Arial, sans-serif;
+        fill: #333;
+    }
+
+    .node:hover {
+        fill: #000;
+    }
+
+    .link {
+        /*stroke: steelblue;*/
+        stroke: blue;
+        stroke-opacity: .4;
+        fill: none;
+        pointer-events: none;
+    }
+    
+    .node:hover,
+    .node--source,
+    .node--target {
+        font-weight: 700;
+    }
+
+
+
+
+
+.links path {
+    /*stroke-opacity: 0.3;*/
+    fill: none;
+}
+.nodes circle {
+    stroke: #0000ff;
+    stroke-width: 1.5px;
+}
+
+
+
+
+
+
+
+.resultssearch{
+    padding: 0px;
+    margin: 0px;
+}
+.resultssearch:hover{
+    background-color:#282053;  color: #fff;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+.tablex th{
+    border-bottom: solid 1px #ededed;
+    padding: 5px;
+}
+.tablex td{
+    vertical-align: middle;
+    border-bottom: solid 1px #ededed;
+    padding: 5px;
+}
+.trover:hover{
+    background-color: #fff8db;
+    cursor: pointer;
+}
+.table tbody tr:hover td, .table tbody tr:hover th {
+  background-color: #fff8db;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+/* The container */
+.container {
+  display: block;
+  position: relative;
+  margin: 0px;
+  padding: 0px;
+  cursor: pointer;
+  /* font-size: 11px; */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  /* border: solid 1px #ff0000; */
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  margin-top: 3px;
+  margin-left: 4px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 12px;
+  width: 12px;
+  background-color: #0d66db;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #0d66db;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #ff0000;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 5px;
+  top: 1px;
+  width: 4px;
+  height: 8px;
+  border: solid #ff0000;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+
+
+

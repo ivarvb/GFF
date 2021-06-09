@@ -1,0 +1,14 @@
+cython
+numpy
+wheel
+scikit-sparse
+tornado
+ujson
+matplotlib
+sklearn
+pandas
+pymongo
+bcrypt
+scipy
+umap-learn
+MulticoreTSNE

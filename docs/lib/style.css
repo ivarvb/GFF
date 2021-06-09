@@ -1,0 +1,70 @@
+body
+{
+	background-color:#FFFFFF;
+	color:#222222;
+}
+
+a {
+	color: #4682B4;
+	text-decoration:none;
+}
+
+a:focus, a:hover {
+	color: #006400;
+	text-decoration:none;
+}
+
+body,td,th {
+	font-family: Source Sans Pro, Helvetica, sans-serif;
+	line-height: 140%;
+	font-size: 16px
+}
+
+strong {
+	font-family: Source Sans Pro, Helvetica, sans-serif;
+	font-size: 15px
+}
+
+heading {
+	font-family: Source Sans Pro, Helvetica, sans-serif;
+	font-size: 15px;
+	font-weight: 700
+}
+
+ul {
+	margin-top: 0;
+}
+
+img#headshot {
+	width: 125px;
+	border: 1px solid #222222;
+}
+
+li {
+	color: black;
+}
+
+li span {
+	color: black;
+}
+
+hr {
+	border-color: #696969;
+}
+
+div.pub {
+	width: 90%;
+	margin-left: 5%;
+	margin-right: 5%;
+	border: 0px;
+	padding: 10px;
+	font-size: 14px;
+}
+
+pre.bib {
+	background-color:#eeeeee;
+	padding: 10px;
+	max-width: 650px;
+	overflow: auto;
+	line-height: normal;
+}
