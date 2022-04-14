@@ -1,0 +1,61 @@
+<!--
+# Author: Ivar Vargas Belizario
+# Copyright (c) 2020
+# E-mail: ivar@usp.br
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Graphs from Features - GFF</title>
+        <meta charset="utf-8">
+<!--        <link href="../lib/buttons.css" rel="stylesheet" type="text/css">
+        <link href="../lib/style.css" rel="stylesheet" type="text/css">-->
+        <style>
+            .red-square {
+                border: solid 1px #ccc;
+                background-color: #F5F5F5;
+                /*width: 300px;*/
+                margin: auto;
+                /*height: 300px;*/
+                position: absolute;
+                left: 50%;
+                top: 20%;
+                transform: translate(-50%, -50%);
+            }
+        </style>
+
+        <link rel="stylesheet" href="./lib/bootstrap-4.5.2-dist/css/bootstrap.min.css">
+        <script src="./lib/jquery-3.5.1.min.js"></script>
+
+    </head>
+    <!--<body style="background-color:dimgray;">-->
+        <body style="background-color: #0a061c;">
+            <div style="background-image: url('img/networks.png');
+        background-repeat: repeat;
+        height: 70px;
+        color: #fff;
+        padding: 25px;
+        font-size: 18px;
+        ">Graphs From Features - GFF</div>
+        <div style="height: 100px;"></div>        
+        <div style="width: 300px; margin: 0 auto; background-color: #333; padding: 20px ;">
+            <form class="form-signin" action="./login" method="POST">
+                <h class="form-signin-heading" style="color: snow;">Please Login</h>
+                <div style="height: 5px;"></div>
+                <input name="user" type="text" class="form-control" placeholder="User / Email Address"
+                    oninvalid="this.setCustomValidity('Please enter valid email')"
+                />
+                <div style="height: 5px;"></div>
+                <input name="password" type="password" class="form-control" placeholder="Password"
+                    oninvalid="this.setCustomValidity('Please enter your password')"
+                />
+                <div style="height: 5px;"></div>
+                <input name="option" type="hidden" value="1"/>
+                <button class="btn btn-primary btn-block" type="submit">Login</button>   
+            </form>
+        </div>
+
+        <script src="./lib/bootstrap-4.5.2-dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

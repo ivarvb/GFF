@@ -1,0 +1,14 @@
+wheel==0.37.1
+numpy==1.21
+scikit-sparse==0.4.6
+tornado==6.1
+ujson==5.1.0
+matplotlib==3.5.1
+scikit-learn==1.0.2
+pandas==1.4.0
+cython==0.29.26
+pymongo==4.0.1
+bcrypt==3.2.0
+scipy==1.7.3
+umap-learn==0.5.2
+MulticoreTSNE==0.1
